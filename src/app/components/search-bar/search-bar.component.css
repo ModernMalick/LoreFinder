@@ -47,8 +47,9 @@
   background: #4f4554;
 }
 :host button img {
+  filter: brightness(10);
   height: auto;
-  width: 28px;
+  width: 24px;
 }
 
 /*# sourceMappingURL=search-bar.component.css.map */
