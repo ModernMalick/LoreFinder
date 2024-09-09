@@ -1,0 +1,41 @@
+﻿@use "colors";
+
+@import "interactables";
+@import "typography";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: colors.$background0;
+  color: colors.$foregroundSecondary;
+  height: 100%;
+
+  body, app-root {
+    display: flex;
+    flex-direction: column;
+    height: -webkit-fill-available;
+
+    router-outlet + *{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+      height: 100%;
+      margin-block: 64px;
+      margin-inline: 16px;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  html {
+    body, app-root {
+      router-outlet + *{
+        margin-block: 128px;
+      }
+    }
+  }
+}

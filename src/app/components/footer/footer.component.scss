@@ -1,0 +1,18 @@
+﻿@use "../../../assets/styles/colors";
+@use "../../../assets/styles/typography";
+
+:host {
+  background: colors.$background1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  padding-block: 8px;
+  padding-inline: 16px;
+
+  a {
+    min-height: unset;
+    padding-block: 4px;
+    padding-inline: 8px;
+    @extend .text-s;
+  }
+}

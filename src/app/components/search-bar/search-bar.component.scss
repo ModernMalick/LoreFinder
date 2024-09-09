@@ -1,0 +1,42 @@
+@use "../../../../src/assets/styles/colors";
+@use "../../../../src/assets/styles/typography";
+
+:host {
+  display: flex;
+  max-width: 512px;
+  width: 100%;
+
+  input {
+    background: colors.$background1;
+    border: 0;
+    box-sizing: border-box;
+    color: colors.$foregroundPrimary;
+    min-height: 48px;
+    padding-inline: 16px;
+    width: -webkit-fill-available;
+
+    @extend .text-body;
+    @extend .text-m;
+
+    &:focus-visible {
+      border: 1px solid colors.$background2;
+      outline: none;
+    }
+  }
+
+  button {
+    background: colors.$background2;
+    border: none;
+    height: 48px;
+    min-width: 48px;
+
+    &:hover {
+      background: colors.$background3;
+    }
+
+    img {
+      height: auto;
+      width: 28px;
+    }
+  }
+}

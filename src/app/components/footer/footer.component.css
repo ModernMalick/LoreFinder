@@ -1,0 +1,36 @@
+.text-display {
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+}
+
+.text-body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.text-s, :host a {
+  font-size: 12px;
+}
+
+.text-m {
+  font-size: 16px;
+}
+
+.text-l {
+  font-size: 20px;
+}
+
+:host {
+  background: #1a171c;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  padding-block: 8px;
+  padding-inline: 16px;
+}
+:host a {
+  min-height: unset;
+  padding-block: 4px;
+  padding-inline: 8px;
+}
+
+/*# sourceMappingURL=footer.component.css.map */

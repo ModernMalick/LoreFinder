@@ -1,0 +1,54 @@
+.text-display {
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+}
+
+.text-body, :host input {
+  font-family: "Work Sans", sans-serif;
+}
+
+.text-s {
+  font-size: 12px;
+}
+
+.text-m, :host input {
+  font-size: 16px;
+}
+
+.text-l {
+  font-size: 20px;
+}
+
+:host {
+  display: flex;
+  max-width: 512px;
+  width: 100%;
+}
+:host input {
+  background: #1a171c;
+  border: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  min-height: 48px;
+  padding-inline: 16px;
+  width: -webkit-fill-available;
+}
+:host input:focus-visible {
+  border: 1px solid #352e38;
+  outline: none;
+}
+:host button {
+  background: #352e38;
+  border: none;
+  height: 48px;
+  min-width: 48px;
+}
+:host button:hover {
+  background: #4f4554;
+}
+:host button img {
+  height: auto;
+  width: 28px;
+}
+
+/*# sourceMappingURL=search-bar.component.css.map */

@@ -1,0 +1,48 @@
+.text-display {
+  font-family: "Audiowide", sans-serif;
+  text-transform: uppercase;
+}
+
+.text-body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.text-s {
+  font-size: 12px;
+}
+
+.text-m {
+  font-size: 16px;
+}
+
+.text-l {
+  font-size: 20px;
+}
+
+:host {
+  width: -webkit-fill-available;
+}
+:host a {
+  align-items: start;
+  background: #1a171c;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  text-transform: unset;
+}
+:host a:hover {
+  background: #352e38;
+}
+:host a img {
+  aspect-ratio: 1/1;
+  height: 100%;
+  width: auto;
+}
+:host a div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=character-card.component.css.map */
