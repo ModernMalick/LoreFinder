@@ -26,9 +26,11 @@ a:hover, button:hover {
 a {
   align-items: center;
   background: #352e38;
+  color: #ffffff;
   display: flex;
   min-height: 48px;
   padding-inline: 16px;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -73,7 +75,6 @@ html body router-outlet + *, html app-root router-outlet + * {
   display: flex;
   flex-direction: column;
   gap: 64px;
-  height: 100%;
   margin-block: 64px;
   margin-inline: 16px;
 }
