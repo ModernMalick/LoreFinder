@@ -10,9 +10,11 @@ a, button {
 a {
   align-items: center;
   background: colors.$background2;
+  color: colors.$foregroundPrimary;
   display: flex;
   min-height: 48px;
   padding-inline: 16px;
+  text-decoration: none;
   text-transform: uppercase;
 
   @extend .text-body;

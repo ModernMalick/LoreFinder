@@ -1,0 +1,5 @@
+<app-character-card
+  *ngFor="let character of characters; let i = index"
+  [character]="character"
+  [ngStyle]="{'animation-delay': i * 0.1 + 's'}"
+></app-character-card>

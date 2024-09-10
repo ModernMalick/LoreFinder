@@ -24,6 +24,7 @@
   display: flex;
   justify-content: flex-end;
   gap: 16px;
+  margin-top: auto;
   padding-block: 8px;
   padding-inline: 16px;
 }

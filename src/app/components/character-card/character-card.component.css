@@ -34,9 +34,8 @@
   background: #352e38;
 }
 :host a img {
-  aspect-ratio: 1/1;
-  height: 100%;
-  width: auto;
+  height: 64px;
+  width: 64px;
 }
 :host a div {
   display: flex;

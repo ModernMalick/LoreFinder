@@ -19,10 +19,24 @@
   font-size: 20px;
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 :host {
   display: flex;
   max-width: 512px;
   width: 100%;
+}
+:host .loading {
+  animation: pulse 1.5s ease-in-out infinite;
 }
 :host input {
   background: #1a171c;
@@ -48,7 +62,7 @@
 }
 :host button img {
   filter: brightness(10);
-  height: auto;
+  height: 24px;
   width: 24px;
 }
 

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
+import {Character} from "../../models/character.model";
 
 @Component({
   selector: 'app-character-card',
@@ -11,5 +12,5 @@ import {NgOptimizedImage} from "@angular/common";
   styleUrl: './character-card.component.scss'
 })
 export class CharacterCardComponent {
-
+  @Input() character!: Character;
 }

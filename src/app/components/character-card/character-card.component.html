@@ -1,17 +1,17 @@
 <a>
   <img
     alt="Character thumbnail"
-    ngSrc="../../../assets/images/character_thumbnail.png"
+    [ngSrc]="character.thumbnail || '../../../assets/images/character_thumbnail.png'"
     height="96" width="96"/>
   <div>
     <h2 class="text-display text-m">
-      Hero Name
+      {{ character.heroName }}
     </h2>
     <p class="text-body text-s">
-      Real Name
+      {{ character.realName }}
     </p>
     <p class="text-body text-s">
-    Publisher
+      {{ character.publisher }}
     </p>
   </div>
 </a>

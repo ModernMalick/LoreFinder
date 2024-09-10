@@ -1,10 +1,26 @@
-@use "../../../../src/assets/styles/colors";
-@use "../../../../src/assets/styles/typography";
+@use "../../../../assets/styles/colors";
+@use "../../../../assets/styles/typography";
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 :host {
   display: flex;
   max-width: 512px;
   width: 100%;
+
+  .loading {
+    animation: pulse 1.5s ease-in-out infinite;
+  }
 
   input {
     background: colors.$background1;
@@ -36,7 +52,7 @@
 
     img {
       filter: brightness(10);
-      height: auto;
+      height: 24px;
       width: 24px;
     }
   }

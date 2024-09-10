@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import {NgOptimizedImage} from "@angular/common";
-import {SearchBarComponent} from "../../search-bar/search-bar.component";
+import {SearchBarComponent} from "../../search/search-bar/search-bar.component";
 import {CharacterCardComponent} from "../../character-card/character-card.component";
-import {SearchResultsComponent} from "../../search-results/search-results.component";
+import {SearchResultsComponent} from "../../search/search-results/search-results.component";
+import {SearchElementComponent} from "../../search/search-element/search-element.component";
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,8 @@ import {SearchResultsComponent} from "../../search-results/search-results.compon
     NgOptimizedImage,
     SearchBarComponent,
     CharacterCardComponent,
-    SearchResultsComponent
+    SearchResultsComponent,
+    SearchElementComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
